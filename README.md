@@ -182,9 +182,8 @@ public void onClick(View view) {
 ## 第三部分：Android UI控制规则与网络编程
 
 ### (a) 移动应用UI控制的两个规则
-**规则1：不要阻塞UI线程**
-**规则2：只能从UI线程更新UI**
-
+**规则1：Do not block the Ul thread不要阻塞UI线程**
+**规则2：Do not access the Ul toolkit from outside the Ul thread只能从UI线程更新UI**
 **知识点讲解：**
 - 规则1确保应用始终响应用户输入，防止"应用无响应"(ANR)对话框
 - 规则2防止并发更新UI导致的不一致状态，所有UI更新必须在主线程执行
